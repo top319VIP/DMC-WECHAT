@@ -1,0 +1,14 @@
+ol,ul,li{
+    list-style: none;
+}
+ol,ul,li,p{
+    padding: 0;
+    margin: 0;
+}
+ input,button,textarea {
+    outline: none;
+    border:none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    resize:none;
+    }

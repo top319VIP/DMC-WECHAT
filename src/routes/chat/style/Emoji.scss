@@ -1,0 +1,24 @@
+.emoji{
+    width: 100%;
+    height: 9rem;
+    background: rgba(255,255,255,.8);
+}
+.CarouselItem{
+    width: 16rem;
+    display: inline-block;
+    >span{
+        display: inline-block;
+        font-size: 1.2rem;
+        width: 1.65rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+}
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}

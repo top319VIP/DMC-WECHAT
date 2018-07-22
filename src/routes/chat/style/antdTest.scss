@@ -1,0 +1,18 @@
+.myCarousel .vItem {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+  }
+  .subTitle {
+    color: #888;
+    font-size: 14px;
+    padding: 30px 0 18px 0;
+  }
+  .CarouselItem{
+    width: 16rem;
+    display: inline-block;
+    >span{
+        font-size: 1.2rem;
+    }
+
+}

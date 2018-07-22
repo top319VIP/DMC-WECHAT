@@ -1,0 +1,103 @@
+$FOOTER_HEIGHT: 2.5rem;
+$MENU_NUM: 4;
+$FICON_HEIGHT: 1.024rem;
+$FICON_WIDTH: 1.216rem;
+$FCOLOR: #a7a7a7;
+$FONCOLOR: #5c9cef;
+$FBGCOLOR: #fffffff0;
+
+a{
+    color: rgb(73, 71, 71);
+    text-decoration: none;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: $FOOTER_HEIGHT;
+  border-top: 0.5px solid #e9e8e8;
+  background-color: $FBGCOLOR;
+  ul{
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: .35rem 0;
+
+      li{
+          display: block;
+          float: left;
+          width: (100%/$MENU_NUM);
+          height: 100%;
+           
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            i{
+                position: relative;
+                display: inline-block;
+                width: $FICON_WIDTH;
+                height: $FICON_HEIGHT;
+            }
+            h6{
+                font-weight: 300;
+                font-size: .6rem;
+                color: $FCOLOR;
+            }
+
+            &.active{
+                h6{
+                    color: $FONCOLOR;
+                }
+                .ficon-home{
+                    background-position: -1.12rem 0;
+                }
+                
+                .ficon-kh{
+                    background-position: -1.12rem -1.14rem;
+                }
+                
+                .ficon-kf{
+                    background-position: -1.0rem -2.3rem;
+                }
+                .ficon-my{
+                    background-position: -1.0rem -3.54rem;
+                }
+            }
+        }
+
+      }
+      
+  }
+}
+
+.ficon{
+    background-image: url('./images/ficon@2x.png');
+    background-repeat: no-repeat;
+    background-size: 2.2466rem 4.693rem;
+}
+
+.ficon-home{
+    background-position: 0 0;
+}
+
+.ficon-kh{
+    background-position: 0 -1.14rem;
+}
+
+.ficon-kf{
+    background-position: 0.1rem -2.3rem;
+}
+.ficon-my{
+    background-position: 0.1rem -3.54rem;
+}
+
+
+/*iphone6plus-使用3倍图*/
+@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){
+    
+    
+    
+}

@@ -1,0 +1,103 @@
+@import './displayhall.scss';
+$red:#BE3A3B;
+.sub{
+    background: #f1f1f1;
+    padding: 3% 0;
+    font-size: .8rem;
+   .series{
+       width: 94%;
+       background: white;
+       overflow: hidden;
+       margin: 0 3% 3% 3%;
+       >img{
+           width: 50%;
+           float: left;
+       }  
+       >div{
+            width: 50%;
+            display: inline-block;
+            float: left;
+            p{
+                line-height: 1.5rem;
+            }
+            p:last-of-type{
+                span:first-of-type{
+                    color: gray;
+                    font-size: .7rem;
+                }
+                span:last-of-type{
+                    color: $red;
+                }
+            }
+       }
+       &:before, &:after{
+            content: "";
+            width: 0;
+            clear: both;
+            display: block;
+        }
+
+   } 
+   .subList{
+        width: 90%;
+        background: white;
+        margin: 0 3%;
+        padding: 0 2%;
+       .title{
+            span{
+                padding: .5rem;
+                line-height: 2rem;
+            }
+       }
+       .list{
+            ul{
+                display: none;
+                padding: 0 2%;
+                li{
+                    border-top: .5px solid #ccc;
+                    padding-bottom: 3%;
+                    position: relative;
+                    p{
+                        font-size: .7rem;
+                    }
+                    p:first-of-type{
+                        i{
+                            float: right;
+                        }
+                        line-height: 2rem;
+                    }
+                    p:nth-of-type(2){
+                        color: gray;
+                    }
+                    p:last-of-type{
+                        color: $red;
+                    }
+                    >div{
+                        position: absolute;
+                        bottom: .6rem;
+                        right: 0;
+                        span{
+                            color: white;
+                            font-size: .7rem;
+                            padding: .1rem .2rem;
+                            line-height: 1.2rem;
+                        }
+                        span:first-of-type{
+                            background: #F6D568;
+                            margin-right: .5rem;
+                        }
+                        span:last-of-type{
+                            background: #FC5865;
+                        }
+                    }
+                }
+            } 
+       }
+   }
+   .active{
+       color: skyblue;
+   }
+   .isShow{
+       display: block!important;
+   }
+}
